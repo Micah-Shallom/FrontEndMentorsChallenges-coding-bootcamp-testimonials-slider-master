@@ -135,6 +135,7 @@ body{
     top: 40%;
     left: 40%;
     display: flex;
+    outline: 0;
 }
 
 .attribution { 
