@@ -118,6 +118,7 @@ body{
     background-color: white;
     padding: 1.5rem;
     cursor: pointer;
+    outline: 0;
 }
 .next{
     left:48%;
