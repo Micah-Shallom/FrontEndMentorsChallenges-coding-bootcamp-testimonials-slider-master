@@ -1,0 +1,76 @@
+:root {
+    --Dark-Blue: hsl(240, 38%, 20%);
+    --Grayish-Blue : hsl(240, 18%, 77%);
+}
+@media only screen and (min-width:37.6rem){
+    .container{
+        max-width: 144.0rem;
+        position: relative;
+    }
+    .pattern{
+        position: absolute;
+        top:5%;
+        left: 25%;
+        height: 90%;
+    }
+    .curve{
+        position: absolute;
+        height: 40rem;
+        bottom: -25rem;
+        background-size:cover ;
+        width: 100%;
+    }
+    .quotes{
+        position: absolute;
+        top:27%;
+        left: 18%;
+        height: 18%;
+        
+    }
+    .slider{
+        width: 100%;
+        padding: 5rem;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        position: relative;
+        /* background-color: red; */
+    }
+    .slider-image{
+        height: 50rem;
+        width: 50%;
+        position: relative;
+        z-index: -1;
+        margin-right: 5rem;
+    }
+    .slider-msg{
+        position: absolute;
+        width: 50%;
+        font-size: 3rem;
+        padding-left: 3rem;
+        left: 0;
+        color: var(--Dark-Blue);
+    }
+    .slideControl{
+        top: 84%;
+        left: 45%;
+    }
+    .bios{
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 3rem;
+    }
+    .title{
+        font-size: 3rem;
+        margin-right: 1rem;
+    }
+    .subtitle{
+        margin-top: 2rem;
+        font-size: 3rem;
+        color: var(--Grayish-Blue);
+    }
+    .attribution{
+        font-size: 2.5rem;
+    }
+}

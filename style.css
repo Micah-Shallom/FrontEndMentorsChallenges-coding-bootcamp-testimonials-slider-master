@@ -1,0 +1,148 @@
+@import url('https://fonts.google.com/specimen/Inter');
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Dark-Blue: hsl(240, 38%, 20%);
+    --Grayish-Blue : hsl(240, 18%, 77%);
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family:'Inter','Arial';
+    position: relative;
+}
+
+.testimonial{
+    width: 100%;
+    height: 100vh;
+    background-color: #a5a5a5;
+    position: relative;
+    z-index: -50;
+    
+}
+.container{
+    max-width: 37.5rem;
+    margin: auto;
+    height: inherit;
+    background-color: white;
+    position: relative;
+    z-index: -40;
+    overflow-y: hidden;
+
+}
+
+.svg{
+    position: absolute;
+    z-index: -5;
+    max-width: 100%;
+}
+
+.quotes{
+    background: url('./images/pattern-quotes.svg')center no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 5rem;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.pattern{
+    background: url('./images/pattern-bg.svg')center no-repeat;
+    background-size: contain;
+    height: 28rem;
+    width: 100%;
+    top: 1rem;
+    margin: auto;
+
+}
+.curve{
+    background: url('./images/pattern-curve.svg')center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 10rem;
+    bottom: -4rem;
+}
+.slider{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1; 
+    position: absolute; 
+    display: none;  
+}
+
+.slider-image{
+    width: 65%;
+    height: 22rem;
+    box-shadow: 0px 20px 20px -2px var(--Grayish-Blue);
+    position: relative;
+}
+.tanya,
+.john{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+.slider-msg{
+    width: 80%;
+    color: var(--Grayish-Blue);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.title{
+    color: var(--Dark-Blue);
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+.subtitle{
+    font-size: 1.5rem;
+}
+
+.prev,
+.next{
+    border-radius: 2rem 0 0 2rem ;
+    background-color: white;
+    padding: 1.5rem;
+    cursor: pointer;
+}
+.next{
+    left:48%;
+    border-radius: 0 2rem 2rem 0 ;
+}
+.prev:hover,
+.next:hover{
+    background-color: #a5a5a5;
+}
+.slideControl{
+    width: 20%;
+    position: absolute;
+    justify-content: center;
+    top: 40%;
+    left: 40%;
+    display: flex;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 8px;
+    z-index: 2000;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
